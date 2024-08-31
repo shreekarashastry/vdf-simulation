@@ -29,6 +29,7 @@ func RunEthash() {
 		select {
 		case <-timer.C:
 			ethashHashesEachRound = append(ethashHashesEachRound, uint64(ethash.NumHashes()))
+			ethash.SetNumHashes(0)
 			close(stop)
 		}
 	}
