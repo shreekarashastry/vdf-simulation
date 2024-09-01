@@ -2,7 +2,11 @@ module github.com/shreekarashastry/vdf-simulation
 
 go 1.22.6
 
-require github.com/shreekarashastry/ethash v0.0.0-20240831183055-710f478eb916
+require (
+	github.com/harmony-one/vdf v1.0.0
+	github.com/shreekarashastry/ethash v0.0.0-20240831183055-710f478eb916
+	github.com/shreekarashastry/vdf v0.1.0
+)
 
 replace gopkg.in/fatih/set.v0 => github.com/shreekarashastry/set v0.1.1
 
